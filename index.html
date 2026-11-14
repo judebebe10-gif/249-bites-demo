@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover delicious food at 249 Bites.">
+  <title>249 Bites | Good Food, Good Mood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    A LITTLE MORE FLAVOUR, A LITTLE MORE JOY.
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">249<span>BITES.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#menu" class="nav-btn">Discover Menu ↗</a>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO 249 BITES</p>
+
+        <h1>
+          Good food.<br>
+          <em>Great</em> moments.
+        </h1>
+
+        <p class="hero-text">
+          Every craving deserves something special.
+          Discover delicious bites made for memorable moments.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="primary-btn">Explore the Menu ↗</a>
+          <a href="#about" class="text-link">Discover our story</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-line"></span>
+          <span>GOOD FOOD. GOOD MOOD.</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+       <img
+  src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=85"
+  alt="Freshly prepared burger"
+>
+        <div class="image-tag">
+          <span>249</span>
+          <small>MADE FOR YOUR CRAVINGS</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div>
+        GOOD FOOD ✳ GOOD MOOD ✳ GREAT TASTE ✳ 249 BITES ✳
+        GOOD FOOD ✳ GOOD MOOD ✳ GREAT TASTE ✳ 249 BITES ✳
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <p class="eyebrow">SOMETHING FOR EVERY CRAVING</p>
+      <h2>A menu worth exploring.</h2>
+      <p class="section-intro">
+        From satisfying bites to your favourite classics.
+      </p>
+
+
+<div class="menu-filters" aria-label="Filter menu">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="shawarma">Shawarma</button>
+  <button class="filter-btn" data-filter="pizza">Pizza</button>
+  <button class="filter-btn" data-filter="burgers">Burgers</button>
+  <button class="filter-btn" data-filter="falafel">Falafel</button>
+</div>
+
+<p class="menu-count" id="menu-count" aria-live="polite">
+  Showing all menu items
+</p>
+
+
+      <div class="menu-grid">
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=700"
+            alt="Shawarma"
+          >
+          <div class="menu-info">
+            <span class="food-number">01 / FAVOURITES</span>
+            <h3>Shawarma</h3>
+            <p>Freshly prepared and full of flavour.</p>
+            <span class="food-price">From 2,500 RWF</span>
+            <button class="add-to-order" data-item="Shawarma">Add to order +</button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+            alt="Pizza"
+          >
+          <div class="menu-info">
+            <span class="food-number">02 / CLASSICS</span>
+            <h3>Pizza</h3>
+            <p>A delicious favourite to share.</p>
+            <span class="food-price">From 6,000 RWF</span>
+            <button class="add-to-order" data-item="Pizza">Add to order +</button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+        
+         <img
+          src="capture.jpg"
+          alt="Fresh burger"
+         >
+
+          <div class="menu-info">
+            <span class="food-number">03 / SIGNATURE BITES</span>
+            <h3>Burgers</h3>
+            <p>A satisfying bite for any craving.</p>
+            <span class="food-price">From 4,000 RWF</span>
+            <button class="add-to-order" data-item="Burgers">Add to order +</button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1701688596783-231b3764ef67?auto=format&fit=crop&w=900&q=85"
+            alt="Falafel bowl"
+          >
+          <div class="menu-info">
+            <span class="food-number">04 / MORE TO LOVE</span>
+            <h3>Falafel</h3>
+            <p>A tasty option full of character.</p>
+            <span class="food-price">From 2,000 RWF</span>
+            <button class="add-to-order" data-item="Falafel">Add to order +</button>
+          </div>
+        </article>
+
+      </div>
+
+
+<div class="order-box" id="order">
+  <p class="eyebrow">YOUR SELECTION</p>
+  <h2>Your order list.</h2>
+  <p class="order-intro">Your selected favourites will appear here.</p>
+
+  <div id="cart-items">
+    <p class="empty-cart">Your order is empty for now.</p>
+
+<div class="checkout-preview">
+  <h3>Almost there.</h3>
+  <p>Enter your details to preview the ordering experience.</p>
+
+  <form id="checkout-form">
+    <input
+      type="text"
+      id="customer-name"
+      placeholder="Your name"
+      required
+    >
+
+    <input
+      type="tel"
+      id="customer-phone"
+      placeholder="Your phone number"
+      required
+    >
+
+    <textarea
+      id="order-notes"
+      placeholder="Any special requests? (Optional)"
+    ></textarea>
+
+    <button type="submit" class="checkout-btn">
+      Preview My Order ↗
+    </button>
+  </form>
+
+  <p class="demo-note">
+    Demo checkout only. No real order will be sent.
+  </p>
+</div>
+
+  </div>
+
+  <div class="cart-bottom">
+    <strong id="cart-count">0 items selected</strong>
+    <button id="clear-cart" type="button">Clear selection</button>
+  </div>
+</div>
+
+
+
+
+      <p class="disclaimer">
+        Demonstration menu. Items and prices require restaurant approval.
+      </p>
+    </section>
+
+    <section class="featured">
+      <div class="featured-image">
+        <img
+          src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1000"
+          alt="A selection of delicious food"
+        >
+      </div>
+
+      <div class="featured-content">
+        <p class="eyebrow">THE 249 EXPERIENCE</p>
+        <h2>More than a meal. It's a moment.</h2>
+        <p>
+          Good food has a way of bringing people together.
+          Find your next favourite bite and make every moment count.
+        </p>
+        <a href="#contact" class="primary-btn">Get in Touch ↗</a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">A LITTLE ABOUT 249</p>
+        <h2>Made for good times and great taste.</h2>
+        <p>
+          Welcome to 249 Bites. Explore delicious choices
+          and discover something worth coming back for.
+        </p>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1547592180-85f173990554?w=900"
+        alt="Fresh food"
+      >
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">YOUR NEXT BITE STARTS HERE</p>
+      <h2>Something delicious is calling.</h2>
+      <p>
+        Have a question about the menu? Get in touch with 249 Bites.
+      </p>
+
+      <a
+        href="https://wa.me/250792408791"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="primary-btn"
+      >
+        Chat on WhatsApp ↗
+      </a>
+
+      <p class="demo-note">
+        Demo contact link — confirm the restaurant's preferred
+        ordering number before launch.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">249<span>BITES.</span></a>
+    <p>© 2026 249 Bites. Demo concept by Kigali Digital.</p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
